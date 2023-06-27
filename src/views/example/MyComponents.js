@@ -33,7 +33,7 @@ class MyComponents extends React.Component {
         console.log('>>>call render: ', this.state)
         return (
 
-            <>              
+            <>             
                 <form>
                     <label htmlFor="fname">First name:</label><br/>
                     <input
@@ -50,11 +50,16 @@ class MyComponents extends React.Component {
                     />
                     <br />
                     <br />
+                    <div>
+                        Full name: {this.state.firstName} {this.state.lastName}
+                    </div>
                     <input type="submit" value="Submit"
                     
-                        onClick={(event)=> this.handleSubmit(event)}
+                        onClick={(event) => this.handleSubmit(event)}
+                        
                     />
                 </form>
+                
             </>
         )
 
