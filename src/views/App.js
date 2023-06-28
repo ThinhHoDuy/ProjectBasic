@@ -4,7 +4,8 @@ import './App.scss';
 
 import About from './example/About';
 import Home from './example/Home';
-import MyComponents from './example/MyComponents';
+import MyComponent from './example/MyComponent';
+
 
 // 2 Components Class Components and Funtion Compotions
 // JSX -> Code Html ben trong file JS
@@ -22,11 +23,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
                 
-        {/* <MyComponents/> */}
-        {/* <MyComponents></MyComponents> */}
+        {/* <MyComponent/> */}
+        {/* <MyComponent></MyComponent> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<MyComponents />} />
+        <Route path="/news" element={<MyComponent />} />
         <Route path="/about" element={ <About /> } />
       </Routes> 
       </header>
