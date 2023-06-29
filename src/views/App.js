@@ -5,7 +5,7 @@ import './App.scss';
 import About from './example/About';
 import Home from './example/Home';
 import MyComponent from './example/MyComponent';
-import Content from '../BT/UserEffect/Content';
+import Content from '../BT/UseEffect/Content';
 
 
 
