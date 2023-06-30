@@ -6,6 +6,8 @@ import About from './example/About';
 import Home from './example/Home';
 import MyComponent from './example/MyComponent';
 import Content from '../BT/UseEffect/Content';
+import CountingNumbers from '../BT/UseRef/CountingNumbers';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
         <Link to="/news">News</Link>
         <Link to="/about">About</Link>
         <Link to="/content">Content</Link>
+        <Link to="/CountingNumbers">CountingNumbers</Link>
       </div>
       
       <header className="App-header">
@@ -28,10 +31,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<MyComponent />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/content" element={ <Content /> } />
+        <Route path="/about" element={<About />} />
+        <Route path="/content" element={<Content />} />
+        <Route path="/CountingNumbers" element={ <CountingNumbers /> } />
       </Routes> 
       </header>
+      
+      
     </div>  
   );
 }

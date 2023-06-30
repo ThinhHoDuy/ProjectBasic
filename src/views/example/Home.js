@@ -6,7 +6,7 @@ export default function Counter() {
     function handleClick() {
       setCount(count + 1);
     }
-  function handleReduce() {
+    function handleReduce() {
       setCount(count => count - 1);
     }
   

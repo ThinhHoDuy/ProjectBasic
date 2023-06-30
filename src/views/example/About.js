@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState,useRef,useEffect } from 'react'
 
 
 function About() {
   const [job, setJob] = useState('')
   const [jobs, setJobs] = useState([])
+  const ref = useRef()
+  useEffect(() => {
+    ref.current.focus()
+  },[])
 
   const handleSubmit = () => {
     setJobs(prev => {
@@ -16,6 +20,7 @@ function About() {
   return (
     <div className="List" style={{ padding: 30 }}>
       <input
+        ref={ref}
         value={job}
         onChange={e => setJob(e.target.value)}
       />
