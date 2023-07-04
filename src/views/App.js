@@ -5,8 +5,10 @@ import './App.scss';
 import About from './example/About';
 import Home from './example/Home';
 import MyComponent from './example/MyComponent';
-import Content from '../BT/UseEffect/Content';
-import CountingNumbers from '../BT/UseRef/CountingNumbers';
+import Content from '../BT/useEffect/Content';
+import CountingNumbers from '../BT/useRef/CountingNumbers';
+import UpDown from '../BT/useReducer/UpDown';
+import Form from '../BT/useContext/Form'
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Link to="/about">About</Link>
         <Link to="/content">Content</Link>
         <Link to="/CountingNumbers">CountingNumbers</Link>
+        <Link to="/UpDown">UpDown</Link>
+        <Link to="/Form">Form</Link>
       </div>
       
       <header className="App-header">
@@ -34,6 +38,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/content" element={<Content />} />
         <Route path="/CountingNumbers" element={ <CountingNumbers /> } />
+        <Route path="/UpDown" element={ <UpDown/> } />
+        <Route path="/Form" element={ <Form/> } />
+        
       </Routes> 
       </header>
       

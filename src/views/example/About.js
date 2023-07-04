@@ -16,6 +16,7 @@ function About() {
     })
     setJob('')
   }
+
  
   return (
     <div className="List" style={{ padding: 30 }}>
