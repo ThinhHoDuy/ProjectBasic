@@ -2,7 +2,7 @@ import './App.css';
 import Counter from './features/counter/Counter';
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Counter/>
